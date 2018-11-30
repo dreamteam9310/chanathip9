@@ -1,0 +1,30 @@
+<app-content>
+  <br><br>
+    <form [formGroup]="form" (submit) = "onSubmit()">
+      <div class="row">
+        <label for="">ส่วนสูง</label>
+        <input type="text" class="form-control"
+        formControlName="HEIGHT" >
+      </div>
+      <br>
+  
+        <br>
+        <div class="row">
+            <label for="">น้ำหนัก</label>
+            <input type="text" class="form-control" 
+            formControlName="WEIGHT">
+        </div>
+        <br>
+        
+          <br>
+          <div class="row">
+              <button type="submit" class="btn btn-success">คำนวณ</button>
+          </div>
+          <br>
+          <div class="row" >
+              <label for="">BMI</label>
+              <input type="text" class="form-control" 
+              formControlName="WEIGHT"  >
+          </div>
+    </form>
+</app-content>
