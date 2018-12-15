@@ -1,0 +1,39 @@
+<app-content>
+  <br>
+  <br>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" method="post">
+      <div class="formGroup row">
+        <label for="">รหัส</label>
+        <input type="text"  class="form-control" formControlName="riceId">
+  
+  
+      </div>
+
+      <div class="formGroup row">
+        <label for="">ชื่อ</label>
+        <input type="text"  value ="{{items?.riceName}}" class="form-control" formControlName="riceName">
+  
+      </div>
+
+      <div class="formGroup row">
+        <label for="">ราคา</label>
+        <input type="text" value ="{{items?.ricePrice}}" class="form-control" formControlName="ricePrice">
+      </div>
+  
+  
+      <div class="formGroup row">
+        <label for="">จำนวน</label>
+        <input type="texe" value ="{{items?.riceNumber}}" class="form-control" formControlName="riceNumber">
+  
+      </div>
+
+      <div class="formGroup row">
+          <label for="">รหัสประเภท</label>
+          <input type="text" value ="{{items?.categoryId}}" class="form-control" formControlName="categoryId">
+    
+        </div>  
+      
+      <button type="submit" class="btn btn-primary">เพิ่ม</button>
+
+    </form>
+  </app-content>
